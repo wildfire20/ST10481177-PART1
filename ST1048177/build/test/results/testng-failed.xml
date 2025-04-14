@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ST1048177]">
+  <test thread-count="5" name="TestNG tests(failed)">
+    <classes>
+      <class name="Assignment_1.LoginNGTest">
+        <methods>
+          <include name="testCheckUsername"/>
+          <include name="testCheckPasswordComplexity"/>
+          <include name="testReturnLoginStatus"/>
+          <include name="setUpClass"/>
+          <include name="testLoginUser"/>
+          <include name="tearDownMethod"/>
+          <include name="testRegisterUser"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="testCheckLocalPhoneNumber"/>
+        </methods>
+      </class> <!-- Assignment_1.LoginNGTest -->
+    </classes>
+  </test> <!-- TestNG tests(failed) -->
+</suite> <!-- Failed suite [ST1048177] -->

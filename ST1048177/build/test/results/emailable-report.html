@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">ST1048177</th></tr>
+<tr><td><a href="#t0">TestNG tests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">77</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ST1048177</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestNG tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">Assignment_1.LoginNGTest</td><td><a href="#m0">testCheckLocalPhoneNumber</a></td><td rowspan="1">1744547822917</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m1">testCheckPasswordComplexity</a></td><td rowspan="1">1744547822922</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">testCheckUsername</a></td><td rowspan="1">1744547822925</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m3">testLoginUser</a></td><td rowspan="1">1744547822925</td><td rowspan="1">29</td></tr><tr class="failedeven"><td><a href="#m4">testRegisterUser</a></td><td rowspan="1">1744547822960</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m5">testReturnLoginStatus</a></td><td rowspan="1">1744547822963</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>TestNG tests</h2><h3 id="m0">Assignment_1.LoginNGTest#testCheckLocalPhoneNumber</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: Range [0, 3) out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4963)
+	at java.base/java.lang.String.substring(String.java:2925)
+	at Assignment_1.Login.checkLocalPhoneNumber(Login.java:47)
+	at Assignment_1.LoginNGTest.testCheckLocalPhoneNumber(LoginNGTest.java:78)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Assignment_1.LoginNGTest#testCheckPasswordComplexity</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The test case is a prototype.
+	at Assignment_1.LoginNGTest.testCheckPasswordComplexity(LoginNGTest.java:66)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Assignment_1.LoginNGTest#testCheckUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The test case is a prototype.
+	at Assignment_1.LoginNGTest.testCheckUsername(LoginNGTest.java:51)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Assignment_1.LoginNGTest#testLoginUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The test case is a prototype.
+	at Assignment_1.LoginNGTest.testLoginUser(LoginNGTest.java:114)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Assignment_1.LoginNGTest#testRegisterUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.UnsupportedOperationException: Not supported yet.
+	at Assignment_1.Login.checkPhoneNumber(Login.java:88)
+	at Assignment_1.Login.registerUser(Login.java:57)
+	at Assignment_1.LoginNGTest.testRegisterUser(LoginNGTest.java:95)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Assignment_1.LoginNGTest#testReturnLoginStatus</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [] but found [A failed login]
+	at Assignment_1.LoginNGTest.testReturnLoginStatus(LoginNGTest.java:128)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
