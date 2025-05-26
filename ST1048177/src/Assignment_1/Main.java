@@ -1,5 +1,6 @@
 package Assignment_1;
 
+//Wayne Mundirwa ST10481177
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 
@@ -15,7 +16,8 @@ public class Main {
         String phone = JOptionPane.showInputDialog(null, "Enter Phone Number (starting with South African country code)");
 
         Login login = new Login(); // Create and instantiate login object
-
+        
+                
         boolean validatePhone = login.checkLocalPhoneNumber(phone);
         boolean validateUsername = login.checkUsername(username);
         boolean validatePassword = login.checkPasswordComplexity(password);
@@ -64,14 +66,34 @@ public class Main {
             if (loginUsername.equals(username) && loginPassword.equals(password)) {
                 JOptionPane.showMessageDialog(null, 
                     "Welcome " + firstName + " " + lastname + "! It is great to see you again.");
-            } else {
+      try {
+        QuickChatApp chatApp = new QuickChatApp();
+        chatApp.startApplication();
+      } catch (Exception e) {
+        JOptionPane.showMessageDialog(null,
+            "Failed to launch chat application: " + e.getMessage(),
+            "Error", JOptionPane.ERROR_MESSAGE);
+    }
+    } 
+              
+          
+     else {
                 JOptionPane.showMessageDialog(null, 
                     "Login failed, wrong username or password", 
                     "Error", JOptionPane.ERROR_MESSAGE);
             }
-        } else {
-            JOptionPane.showMessageDialog(null, "Failed to register");
-        }
+        
+       
+      // Launch chat application
+       // QuickChatApp chatApp = new QuickChatApp();
+        //chatApp.startApplication();
     }
+//private static void showError(String message) {
+        //JOptionPane.showMessageDialog(null, message, "Error", JOptionPane.ERROR_MESSAGE);
+    
     }
+}
+    
+    
+
 
